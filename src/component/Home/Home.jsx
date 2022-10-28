@@ -9,39 +9,46 @@ const Home = () => {
     {
       text: "Twitter Link",
       link: "https://twitter.com/OkoyeDennis07",
+      id: "twitter",
     },
     {
       text: "Zuri Team",
       link: "https://training.zuri.team",
+      id: "btn__zuri",
     },
     {
       text: "Zuri Books",
       link: "https://books.zuri.team/",
+      id: "books",
     },
     {
       text: "Python Books",
       link: "https://books.zuri.team/python-for-beginners?ref_id=<dennis okoye>",
+      id: "book__python",
     },
     {
       text: "Background Check for Coders",
-      link: "https://www.figma.com/exit?url=https%3A%2F%2Fbackground.zuri.team",
+      link: "https://background.zuri.team",
+      id: "pitch",
     },
     {
       text: "Design Books",
       link: "https://books.zuri.team/design-rules",
+      id: "book__design",
     },
   ];
   return (
     <div className="home">
+      <h2 id="slack">Dennis Okoye</h2>
       <div className="home__wrapper">
         <div className="profile_container">
           <img src={img1} id="profile__img" alt="profile_logo" />
-          <h6>Annette Black</h6>
+          <h6 id="twitter">Okoye Dennis</h6>
         </div>
         <div className="link__wrapper">
-          {data.map(({ text, link }, index) => (
+          {data.map(({ text, link, id }, index) => (
             <div key={index}>
-              <a target="_blank" href={link}>
+              <a target="_blank" id={id} href={link}>
                 {text}
               </a>
             </div>

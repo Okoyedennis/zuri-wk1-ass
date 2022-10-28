@@ -4,6 +4,10 @@
   padding: 64px 112px 44px 112px;
 }
 
+.home h2{
+  display: none;
+}
+
 .home .home__wrapper {
   width: 100%;
   border-radius: 0px;
