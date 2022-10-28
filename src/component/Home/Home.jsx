@@ -43,7 +43,7 @@ const Home = () => {
       <div className="home__wrapper">
         <div className="profile_container">
           <img src={img1} id="profile__img" alt="profile_logo" />
-          <h6 id="twitter">Okoye Dennis</h6>
+          <h6 id="twitter">OkoyeDennis07</h6>
         </div>
         <div className="link__wrapper">
           {data.map(({ text, link, id }, index) => (

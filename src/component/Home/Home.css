@@ -64,11 +64,15 @@
   offset: 0px, 1px rgba(16, 24, 40, 0.05);
   text-align: center;
   height: 76px;
-  width: 80%;
+  width: 700px;
   border-radius: 8px;
   padding: 24px 32px 24px 32px;
   border: 1px solid #eaecf0;
   background-color: #eaecf0;
+  cursor: pointer;
+}
+.link__wrapper div:hover {
+    background-color: rgb(208 213 221)
 }
 
 .link__wrapper div a {
@@ -100,6 +104,13 @@
   height: 24px;
 }
 
+@media (max-width: 768px){
+.link__wrapper div {
+    border: 1px solid #eaecf0;
+    background-color: #eaecf0;
+    width: 100%;
+  }
+}
 @media (max-width: 568px) {
   .home {
     /* height: 892px; */
@@ -127,6 +138,7 @@
   .link__wrapper div {
     border: 1px solid #eaecf0;
     background-color: #eaecf0;
+    width: 80%;
   }
 
   .link__wrapper div a {
