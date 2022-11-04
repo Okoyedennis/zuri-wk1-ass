@@ -48,17 +48,13 @@ const Home = () => {
         </div>
         <div className="link__wrapper">
           {data.map(({ text, link, id }, index) => (
-            <div key={index}>
-              <a target="_blank" id={id} rel="noreferrer" href={link}>
-                {text}
-              </a>
-            </div>
+            <a target="_blank" id={id} rel="noreferrer" href={link}>
+              <div key={index}>{text}</div>
+            </a>
           ))}
-          <div>
-            <Link to="/contact" id="contact">
-              Contact Me
-            </Link>
-          </div>
+          <Link to="/contact" id="contact">
+            <div>Contact Me</div>
+          </Link>
         </div>
         <div className="icon__wrapper">
           <img src={img2} alt="icon" />
