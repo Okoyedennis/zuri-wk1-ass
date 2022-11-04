@@ -4,6 +4,7 @@
   /* box-sizing: border-box; */
 }
 
-/* .app{
-  height: 100vh;
-} */
+.container{
+  width: 70%;
+  margin: auto;
+}

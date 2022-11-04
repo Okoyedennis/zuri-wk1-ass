@@ -3,6 +3,7 @@ import "./Home.css";
 import img1 from "../../images/prologo.jpeg";
 import img2 from "../../images/slack.png";
 import img3 from "../../images/github.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const data = [
@@ -48,11 +49,16 @@ const Home = () => {
         <div className="link__wrapper">
           {data.map(({ text, link, id }, index) => (
             <div key={index}>
-              <a target="_blank" id={id} href={link}>
+              <a target="_blank" id={id} rel="noreferrer" href={link}>
                 {text}
               </a>
             </div>
           ))}
+          <div>
+            <Link to="/contact" id="contact">
+              Contact Me
+            </Link>
+          </div>
         </div>
         <div className="icon__wrapper">
           <img src={img2} alt="icon" />

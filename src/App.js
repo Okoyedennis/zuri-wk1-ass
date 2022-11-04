@@ -1,7 +1,7 @@
 import "./App.css";
-import Footer from "./component/Footer/Footer";
 import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactPage from "./pages/ContactPage";
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
